@@ -13,7 +13,7 @@ interface Props {
   tweets: Tweet[];
 }
 const Home = ({ tweets }: Props) => {
-// console.log('tweet',tweets)
+console.log('tweet',tweets)
 
   return (
     <div className="max-h-screen mx-auto lg:max-w-6xl">
