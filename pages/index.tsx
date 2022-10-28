@@ -13,7 +13,7 @@ interface Props {
   tweets: Tweet[];
 }
 const Home = ({ tweets }: Props) => {
-console.log('tweet',tweets)
+// console.log('tweet',process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID)
 
   return (
     <div className="max-h-screen mx-auto lg:max-w-6xl">
@@ -35,7 +35,7 @@ console.log('tweet',tweets)
 };
 
 export default Home;
-export const getServerSideProps = async () => {
+export const getstaticprops = async () => {
 
   const tweets = await fetchTweets();
   console.log('==',tweets);
